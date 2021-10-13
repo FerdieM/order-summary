@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+  --color-primary-blue: hsl(225, 100%, 94%);
+  --color-secondary-blue: hsl(245, 75%, 52%);
+
+  --color-neutral-blue: hsl(225, 100%, 98%);
+  --color-neutral-secondary-blue: hsl(224, 23%, 55%);
+  --color-neutral-dark-blue: hsl(223, 47%, 23%);
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  /* background-color: aquamarine; */
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary-blue);
+}
+
+.order {
+  background-color: white;
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.order__hero {
+  width: 100%;
+}
+
+.order__summary {
+  width: 80%;
+  margin: 0 auto;
+  /* display: grid; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 40px;
+}
+
+.order__heading {
+  font-weight: 900;
+  color: var(--color-neutral-dark-blue);
+}
+
+.order__text {
+  color: var(--color-neutral-secondary-blue);
+}
+
+.order__coverage {
+  background-color: var(--color-neutral-blue);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.order__coverage img {
+  width: 40px;
+  height: 40px;
+}
+
+.order__plan {
+  margin-left: -50px;
+  color: var(--color-neutral-dark-blue);
+}
+
+.order__plan_text {
+  font-weight: 900;
+}
+
+.order__change {
+  justify-self: end;
+  /* text-decoration: none; */
+  font-weight: 700;
+}
+
+.order__change:hover,
+.order__change:active {
+  text-decoration: none;
+}
+
+.order__payment_btn,
+.order__cancel_btn {
+  padding: 0;
+  border: none;
+  background: none;
+  font-weight: 700;
+  color: var(--color-neutral-secondary-blue-blue);
+}
+
+.order__payment_btn:hover,
+.order__cancel_btn:hover {
+  padding: 15px 30px;
+  border-radius: 10px;
+  background: var(--color-secondary-blue);
+  color: #fff;
+  box-shadow: 0px 10px 20px hsla(245, 75%, 52%, 0.5);
+}
